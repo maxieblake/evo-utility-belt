@@ -210,20 +210,36 @@ module.exports = {
     ],
     "no-with": "warn",
     "no-whitespace-before-property": "warn",
-    "padding-line-between-statements": [
+    "no-undef": "off",
+    "no-console": "warn",
+    "no-unused-vars": [
       "warn",
       {
-        blankLine: "always",
-        prev: "*",
-        next: "return"
-      },
+        varsIgnorePattern: "\\b[A-Z][a-z]*([A-Z][a-z]*)*\\b"
+      }
+    ],
+    "no-extra-boolean-cast": "warn",
+    "no-use-before-define": "off",
+    "no-case-declarations": "warn",
+    "no-constant-condition": ["warn", { checkLoops: false }],
+    "padding-line-between-statements": [
+      "warn",
+      { blankLine: "always", prev: "*", next: "return" },
       { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
       {
         blankLine: "any",
         prev: ["const", "let", "var"],
-        next: ["const", "let", "var"]
-      }
+        next: ["const", "let", "var", "expression"]
+      },
+      { blankLine: "always", prev: "multiline-block-like", next: "*" },
+      { blankLine: "always", prev: ["class", "function", "block"], next: "*" }
     ],
+    "lines-between-class-members": [
+      "warn",
+      "always",
+      { exceptAfterSingleLine: true }
+    ],
+
     radix: "warn",
     "require-yield": "warn",
     "rest-spread-spacing": ["warn", "never"],
@@ -275,6 +291,8 @@ module.exports = {
     "react/require-render-return": "warn",
     "react/style-prop-object": "warn",
     "react/prop-types": "off",
+    "react/display-name": "warn",
+    "react/jsx-key": "warn",
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
     "jsx-a11y/accessible-emoji": "warn",
