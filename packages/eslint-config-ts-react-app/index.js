@@ -169,7 +169,7 @@ module.exports = {
     "no-this-before-super": "warn",
     "no-throw-literal": "warn",
     "no-undef": "warn",
-    "no-restricted-globals": ["warn"].concat(restrictedGlobals),
+    "no-restricted-globals": "off",
     "no-unexpected-multiline": "warn",
     "no-unreachable": "warn",
     "no-unused-expressions": [
@@ -211,7 +211,7 @@ module.exports = {
     "no-with": "warn",
     "no-whitespace-before-property": "warn",
     "no-undef": "off",
-    "no-console": "warn",
+    "no-console": ["warn", { allow: ["info", "warn", "error"] }],
     "no-unused-vars": [
       "warn",
       {
