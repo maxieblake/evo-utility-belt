@@ -1,13 +1,16 @@
 {
-  "name": "eslint-config-ts-react-app",
-  "version": "1.0.1",
+  "name": "@evo/eslint-config-ts-react-app",
+  "version": "1.0.0",
   "description": "ESLint configuration used for React application with TypeScript and Prettier",
   "repository": "maxieblake/evo-utility-belt",
   "files": [
     "index.js"
   ],
-  "author": "",
+  "author": "blake@syneforge.com",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.ginsp.net/"
+  },
   "dependencies": {
     "eslint": "^4.14.0",
     "eslint-config-prettier": "^2.9.0",
