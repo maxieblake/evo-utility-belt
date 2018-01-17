@@ -200,6 +200,7 @@ module.exports = {
     "no-useless-concat": "warn",
     "no-useless-constructor": "warn",
     "no-useless-escape": "warn",
+    "no-empty": ["warn", { allowEmptyCatch: true }],
     "no-useless-rename": [
       "warn",
       {
@@ -290,14 +291,14 @@ module.exports = {
     "react/react-in-jsx-scope": "warn",
     "react/require-render-return": "warn",
     "react/style-prop-object": "warn",
-    "react/prop-types": "off",
     "react/display-name": "warn",
     "react/jsx-key": "warn",
+
+    "react/prop-types": "off",
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
     "jsx-a11y/accessible-emoji": "warn",
     "jsx-a11y/alt-text": "warn",
-    "jsx-a11y/anchor-has-content": "warn",
     "jsx-a11y/aria-activedescendant-has-tabindex": "warn",
     "jsx-a11y/aria-props": "warn",
     "jsx-a11y/aria-proptypes": "warn",
@@ -313,6 +314,8 @@ module.exports = {
     "jsx-a11y/role-has-required-aria-props": "warn",
     "jsx-a11y/role-supports-aria-props": "warn",
     "jsx-a11y/scope": "warn",
+
+    "jsx-a11y/anchor-has-content": "off",
 
     // https://github.com/nzakas/eslint-plugin-typescript
     "typescript/class-name-casing": "warn",
