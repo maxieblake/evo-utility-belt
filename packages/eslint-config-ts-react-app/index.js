@@ -293,6 +293,10 @@ module.exports = {
     "react/style-prop-object": "warn",
     "react/display-name": "warn",
     "react/jsx-key": "warn",
+    "react/no-access-state-in-setstate": "warn",
+    "react/no-did-mount-set-state": "warn",
+    "react/no-string-refs": "warn",
+    "react/sort-comp": [1],
 
     "react/prop-types": "off",
 
